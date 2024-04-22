@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    background-color: #EAFAF1;
+}
+main{
+    
+    padding: 2rem 10.3rem;
+    
+}
+.container-header img{
+    max-width: 80px;
+    cursor: pointer;
+    
+}
+.container-header{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+}
+.container-header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    list-style-type: none;
+}
+.container-header #active{
+    color: black;
+}
+.container-header ul a{
+    text-decoration: none;
+    color: #28B463;
+    font-weight: 800;
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+.container-header ul a:hover{
+    color: black;
+}
+.container-header button{
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    padding: 7px 18px;
+    font-size: 17px;
+    color: #28B463;
+    border: 2px solid #28B463;
+    background: none;
+    transition: 0.2s ease;
+}
+.container-header button:hover{
+    background-color: #1D8348;
+    color: white;
+   
+    
+}
+/* Section 1 */
+
+.description{
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin: 40px 0;
+    width: 550px;
+    
+}
+.section-1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 100%;
+}
+.description h1{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 63px;
+}
+.description p{
+    margin-top: 12px;
+    line-height: 28px;
+    font-weight: 350;
+    font-size: 19px;
+}
+/* Section-2 */
+
+.section-2{
+    /* background-color: rgb(238, 255, 127); */
+    display: flex;
+    margin-top: 150px;
+}
+
+/* des-left */
+
+.section-2 .des-left{
+    position: relative;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: 40px;
+    /* background-color: yellow; */
+    width: 400px;
+}
+.section-2 .des-left h2{
+    color: #28B463;
+    font-weight: 700;
+    font-size: 21px;
+}
+.section-2 .des-left li{
+    list-style-position: inside;
+    line-height: 27px;
+}
+.section-2 .des-left ul{
+    margin: 20px 0;
+    font-weight: 400;
+}
+.section-2 .des-left p{
+    margin-bottom: 5px;
+}
+.section-2 .des-left span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* des-mid */
+.des-lists{
+    display: flex;
+}
+.section-2 .des-mid{
+    position: relative;
+    height: 670px;
+    width: 700px;
+    background-color: white;
+    /* margin-left: 130px; */
+    margin-top: -100px;
+    border-radius: 10px;
+    border: 1px solid #28B463; 
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.section-2 .des-mid:hover button{
+    transform: scale(1.1);
+    color: black;
+}
+.section-2 .des-mid #recommend{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 8px 0;
+    width: 100%;
+    background-color: #28B463;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.des-mid .price{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;  
+}
+.des-mid .price h1{
+    font-size: 45px;
+    color: #28B463;
+    font-weight: 800;
+}
+.des-mid .price p{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+.des-mid .price button{
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    margin-top: 15px;
+    padding: 12px 35px;
+    border: none;
+    background-color: #1de772;
+    cursor: pointer;
+}
+.des-mid .price-des{
+    padding: 22px;
+    
+}
+.des-mid .price-des>p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.7px;
+}
+.des-mid .price-des .des-lists{
+    margin: 15px 0;
+    font-weight: 400;
+    line-height: 25px;
+}
+i{
+    font-size: 14px;
+    margin-right: 7px;
+    font-weight: 800;
+    color: #28B463;
+}
+/* des-right */
+
+.des-right{
+    background-color: white;
+    margin-top: -20px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    border: 1px solid rgb(245, 245, 245);
+    padding-bottom: 20px;
+}
+.des-right .heading-right:hover #btn-right{
+    transform: scale(1.1);
+    color: black;
+}
+.des-right #text{
+    padding: 23px 50px;
+    background-color: #f5f5f5;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    font-weight: 400;
+}
+.des-right .heading-right{
+    text-align: center;
+    padding: 25px 40px;
+}
+.des-right .heading-right h1{
+    color:#28B463;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.des-right .heading-right p{
+    font-size: 22px;
+    margin-top: 5px;
+    color:black;
+}
+.des-right .heading-right #btn-right{
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    margin-top: 15px;
+    padding: 12px 35px;
+    border: none;
+    background-color: #1de772;
+    cursor: pointer;
+}
+.des-right #get{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.des-right .lists-premium{
+    padding: 0 22px;
+}
+.des-right .lists-premium .des-lists{
+    margin: 15px 0;
+    font-weight: 400;
+    line-height: 25px;
+    
+}
+.Comments{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    width: 700px;
+    /* background-color: #1de772; */
+}
+.Comments img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.Comments p{
+    font-size: 22px;
+    margin: 10px 0;
+}
+.Comments #company{
+    color:#28B463;
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+/* FAQ */
+
+.FAQ{
+    padding: 5rem 10.3rem;
+    background-color: white;
+    border-top: 1px solid rgb(227, 227, 227);
+}
+.faq>h1{
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+.faq-desc{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    line-height: 30px;
+}
+.faq-desc h2{
+    font-size: 22px;
+}
+.faq-desc p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.faq-desc .desc-1{
+    flex: 1;
+    
+}
+.faq-desc .desc-2{
+    flex: 1;
+    margin-left: 34px;
+}
+
+/* Footer */
+
+footer{
+    padding: 5rem 10.3rem 0 10.3rem;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.container-footer .f-left{
+    display: flex;
+    flex-direction: column;
+}
+.container-footer .f-left img{
+   
+    max-width: 110px;
+    cursor: pointer;
+    filter: invert(100%) sepia(7%) saturate(26%) hue-rotate(260deg) brightness(105%) contrast(109%);
+}
+.container-footer .f-left button{
+    padding: 20px 35px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 40px;
+    border: none;
+    background-color: #1de772;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.container-footer .f-left button:hover{
+    background-color: white;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container-footer .info{
+    display: flex;
+    gap: 100px;
+    line-height: 45px;
+    margin-right: 35px;
+}
+.container-footer .info h2{
+    font-size: 22px;
+}
+.container-footer .info p{
+    font-size: 18px;
+    color: #1de772;
+    font-weight: 400;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.container-footer .info p:hover{
+    color: white;
+}
+.copyrights{
+    position: relative;
+    margin-top: 110px;
+    width: 650px;
+    bottom: 12px;
+}
+.copyrights span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyrights span:hover{
+    color:#1de772;
+}
+.copyrights p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Responsive */
+
+
+
+@media screen and (max-width:400px){
+    .container-header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        left: 40px;
+    }
+    .container-header .nav{
+        margin-top: 50px;
+       
+    }
+    .container-header button{
+        padding: 0 20px;
+        
+    }
+    .section-1 .description{
+        position: relative;
+        left: 250px;   
+        min-width: 500px;
+        margin-top: 100px;
+    }
+    .section-2{
+        flex-direction: column;
+        margin-top: -20px;
+    }
+    .des-left{
+        flex: 1;
+        position: relative;
+    }
+    .des-mid{
+        flex: 1;
+        position: relative;
+        top: 150px;
+        min-width: 100px;
+        min-height: 200px;
+    }
+}
